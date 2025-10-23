@@ -1,0 +1,56 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* push main content down so it doesn't overlap the fixed topbar */
+.main-content {
+  padding-top: 110px; /* ensure content starts well below the topbar */
+  margin-left: 60px; /* reserve space for collapsed sidebar */
+  transition: margin-left 0.2s ease, background-color 0.35s ease, color 0.35s ease;
+  background-color: var(--background-color);
+}
+
+.bus-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* two cards per row on desktop */
+  gap: 1.5rem;
+  padding: 2rem;
+  align-items: start;
+}
+
+.search-controls {
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.dashboard-header {
+  padding: 1.5rem 2rem;
+  margin: 0 2rem 1rem 2rem;
+  background: transparent;
+  color: var(--text-color, #222);
+}
+
+.dashboard-header h2 {
+  margin: 0 0 6px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color, #222);
+}
+
+.dashboard-subtitle {
+  margin: 0;
+  color: rgba(0,0,0,0.6);
+}
+
+@media (max-width: 1000px) {
+  .main-content { margin-left: 0; padding-top: 120px; }
+  .topbar { left: 0; }
+  .dashboard-header { margin: 0 1rem 1rem 1rem; }
+  .bus-cards-grid { padding: 1rem; gap: 1rem; grid-template-columns: 1fr; }
+}

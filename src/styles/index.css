@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --text-color: #333;
+  --background-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --input-text: #222;
+  --control-bg: #ffffff;
+  --control-text: #222;
+  --topbar-bg: #1e3799;
+  --topbar-text: #ffffff;
+}
+
+:root[data-theme='dark'], [data-theme='dark'] {
+  --primary-color: #1e3799;
+  --secondary-color: #ffffff;
+  --text-color: #e6eef8;
+  --background-color: #071025;
+  --card-bg: #071826;
+  --input-bg: #0b1726;
+  --input-text: #e6eef8;
+  --control-bg: #0b1726;
+  --control-text: #e6eef8;
+  --topbar-bg: #0b1b32;
+  --topbar-text: #e6eef8;
+}
+
+/* Light theme explicit */
+:root[data-theme='light'], [data-theme='light'] {
+  --primary-color: #3498db;
+  --secondary-color: #2c3e50;
+  --text-color: #222;
+  --background-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --input-bg: #ffffff;
+  --input-text: #222;
+  --control-bg: #ffffff;
+  --control-text: #222;
+  --topbar-bg: #1e3799;
+  --topbar-text: #ffffff;
+}
+
+:root[data-theme='dark'] {
+  --card-bg: #0b1726;
+}
+
+:root[data-theme='light'] {
+  --card-bg: #ffffff;
+}
+
+/* Topbar background variable so theme toggle affects it */
+:root[data-theme='dark'], [data-theme='dark'] {
+  --topbar-bg: #12213b; /* darker navy */
+  --topbar-text: #e6eef8;
+}
+
+:root[data-theme='light'], [data-theme='light'] {
+  --topbar-bg: #1e3799; /* original navy for light mode */
+  --topbar-text: #ffffff;
+}

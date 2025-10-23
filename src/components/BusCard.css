@@ -1,0 +1,24 @@
+.bus-card {
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  width: 250px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 70px;
+}
+
+.bus-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.bus-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.seats { font-size: 12px; color: #555; }

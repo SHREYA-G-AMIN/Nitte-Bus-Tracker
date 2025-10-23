@@ -1,0 +1,90 @@
+.sidebar {
+  background-color: var(--primary-color);
+  color: var(--topbar-text);
+  width: 60px;
+  height: 100vh;
+  padding: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.sidebar.expanded {
+  width: 250px;
+}
+
+.sidebar-toggle {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.toggle-icon {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+.sidebar-nav {
+  padding: 20px 0;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin: 5px 0;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: var(--topbar-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-size: 1.1rem;
+}
+
+.sidebar-nav a:hover {
+  background-color: rgba(255,255,255,0.04);
+  color: var(--secondary-color);
+}
+
+.sidebar-nav a.active {
+  background-color: rgba(255,255,255,0.06);
+  color: var(--secondary-color);
+  position: relative;
+}
+
+.sidebar-nav a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #00d4b1;
+}
+
+.sidebar .icon {
+  width: 24px;
+  margin-right: 16px;
+  font-size: 20px;
+}
+
+.sidebar .text {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.sidebar.expanded .text {
+  opacity: 1;
+}

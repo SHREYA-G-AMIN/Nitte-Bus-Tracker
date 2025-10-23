@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6f7;
+  color: #333;
+}
+/* Leaflet map CSS */
+@import url("https://unpkg.com/leaflet@1.9.4/dist/leaflet.css");
