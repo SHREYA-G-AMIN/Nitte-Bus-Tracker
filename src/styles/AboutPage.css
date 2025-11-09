@@ -1,9 +1,6 @@
-.about-container { padding: 24px; }.about-container {
-
-.about-container h2 { margin-bottom: 8px; }  padding: 40px;
-
-.about-container p { color: #444; }  background: #f4f7fa;
-
+.about-container {
+  padding: 40px;
+  background: #f4f7fa;
   min-height: 100vh;
 }
 
@@ -93,3 +90,4 @@
 .email-link:hover {
   text-decoration: underline;
 }
+
