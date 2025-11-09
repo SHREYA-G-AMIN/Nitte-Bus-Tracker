@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Nitte-Bus-Tracker/static/css/main.01205c49.css",
+    "main.js": "/Nitte-Bus-Tracker/static/js/main.7072d30b.js",
+    "static/media/marker-icon-red.png": "/Nitte-Bus-Tracker/static/media/marker-icon-red.28985c6ce8d15030f70f.png",
+    "static/media/nitte-logo.png": "/Nitte-Bus-Tracker/static/media/nitte-logo.28985c6ce8d15030f70f.png",
+    "index.html": "/Nitte-Bus-Tracker/index.html",
+    "main.01205c49.css.map": "/Nitte-Bus-Tracker/static/css/main.01205c49.css.map",
+    "main.7072d30b.js.map": "/Nitte-Bus-Tracker/static/js/main.7072d30b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.01205c49.css",
+    "static/js/main.7072d30b.js"
+  ]
+}
