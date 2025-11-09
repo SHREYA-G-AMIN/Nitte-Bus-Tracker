@@ -268,3 +268,33 @@ body[data-theme='dark'] .theme-toggle {
   .controls.search-container.open { display: flex; flex-direction: column; gap: 8px; width: calc(100% - 32px); max-width: 360px; }
   .controls.search-container.open .search-input { width: 100%; }
 }
+/* Top bar container (if not already styled) */
+.topbar {
+  background-color: var(--nitte-blue, #1e3799);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Style search input */
+.topbar input[type="text"],
+.topbar select {
+  background-color: #f9fafb;       /* light background */
+  color: #333;                     /* readable text */
+  border: 2px solid #1976d2;       /* blue border */
+  border-radius: 6px;
+  padding: 8px 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover & focus effects */
+.topbar input[type="text"]:focus,
+.topbar select:focus {
+  border-color: #0d47a1;           /* darker blue on focus */
+  background-color: #fff;
+  box-shadow: 0 0 4px rgba(13,71,161,0.3);
+}

@@ -78,7 +78,7 @@ const nearestStop = location.state?.nearestStop || "";
 
   return (
     <div className="bus-detail-container">
-      <button className="back-button" onClick={() => navigate(-1)}>← Back</button>
+      <button className="back-btn" onClick={() => navigate(-1)}>← Back</button>
       <h2>🚌 {bus.name}</h2>
       <p>
         Route: {bus.from} → {bus.to} | Total Stops: {bus.stops.length} | Travel Time: {bus.travelTime}

@@ -1,0 +1,93 @@
+.about-container {
+  padding: 40px;
+  background: #f4f7fa;
+  min-height: 100vh;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  color: #1abc9c;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.about-header p {
+  color: #555;
+  font-size: 16px;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section {
+  background: #ffffffc5;
+  backdrop-filter: blur(6px);
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-4px);
+}
+
+.about-section h2 {
+  color: #1976d2;
+  margin-bottom: 12px;
+}
+
+.about-section p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-section li {
+  background: #e3f2fd;
+  border-radius: 8px;
+  margin: 6px 0;
+  padding: 8px 12px;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-stack span {
+  background: #d1f0e7;
+  color: #0a6950;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.team-list li {
+  margin: 5px 0;
+  color: #444;
+}
+
+.email-link {
+  color: #1abc9c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+

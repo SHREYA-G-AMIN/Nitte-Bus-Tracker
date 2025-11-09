@@ -1,0 +1,95 @@
+.timetable-container {.timetable-container {
+
+  padding: 24px;  padding: 30px;
+
+}  background-color: #f9fafb;
+
+.timetable-list {  min-height: 100vh;
+
+  display: grid;}
+
+  gap: 16px;
+
+}.page-title {
+
+.timetable-card {  font-size: 26px;
+
+  background: #fff;  color: #1abc9c;
+
+  padding: 12px;  font-weight: bold;
+
+  border-radius: 8px;  margin-bottom: 10px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);}
+
+}
+
+.timetable-table {.page-subtitle {
+
+  width: 100%;  color: #555;
+
+  border-collapse: collapse;  margin-bottom: 25px;
+
+}}
+
+.timetable-table th,
+
+.timetable-table td {.timetable-card {
+
+  text-align: left;  background: #fff;
+
+  padding: 8px;  border-radius: 12px;
+
+  border-bottom: 1px solid #eee;  padding: 20px;
+
+}  margin-bottom: 30px;
+
+.page-title { font-size: 1.5rem; margin-bottom: 6px; }  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+.page-subtitle { color: #555; margin-bottom: 12px; }  transition: 0.3s ease;
+
+}
+
+.timetable-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.bus-title {
+  color: #1976d2;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.bus-route {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.timetable-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 15px;
+}
+
+.timetable-table th {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.timetable-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.timetable-table tr:nth-child(even) {
+  background-color: #f7f9fc;
+}
+
+.timetable-table tr:hover {
+  background-color: #f1f1f1;
+}

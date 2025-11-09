@@ -1,9 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Sidebar from './Sidebar';
-import Topbar from './Topbar';
-import { AppUIProvider } from '../context/AppUIContext';
-import '../styles/Dashboard.css';
+import Sidebar from "./Sidebar";
+import Topbar from "./Topbar";
+import SlideMenu from "./SlideMenu"; // ✅ Add this
+import { AppUIProvider } from "../context/AppUIContext";
+import "../styles/Dashboard.css";
 
 const Layout = () => {
   return (
@@ -14,6 +15,7 @@ const Layout = () => {
           <Topbar />
           <Outlet />
         </main>
+        <SlideMenu /> {/* ✅ Moved here */}
       </div>
     </AppUIProvider>
   );

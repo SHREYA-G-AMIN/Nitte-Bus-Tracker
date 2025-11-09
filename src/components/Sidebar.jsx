@@ -24,10 +24,15 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/routes" className={location.pathname === "/routes" ? "active" : ""}>
-              <span className="icon">🚌</span>
-              <span className="text">Bus Routes</span>
-            </Link>
+          <Link
+  to="/bus-routes"
+  className={location.pathname === "/bus-routes" ? "active" : ""}
+>
+  <span className="icon">🚌</span>
+  <span className="text">Bus Routes</span>
+</Link>
+  
+            
           </li>
           <li>
             <Link to="/timetable" className={location.pathname === "/timetable" ? "active" : ""}>
